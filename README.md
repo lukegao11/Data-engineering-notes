@@ -6,4 +6,4 @@ a notebook for a data engineer wannabe
 
 8/6/2022
 
-**data pipeline design patterns
+**data pipeline design patterns**
