@@ -7,6 +7,7 @@ a notebook for a data engineer wannabe
 ## 8/6/2022
 
 **Data pipeline design patterns**
+
 source: https://youtu.be/v67JHa4MrnQ
 
 1. Extract transform and load (ETL)
