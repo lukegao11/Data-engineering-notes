@@ -23,6 +23,10 @@ A *sink*, on the other hand, is a consumer of data, providing logic for the tran
 ## 8/10/2022
 
 DENSE_RANK() VS RANK()
-ORDER BY <REQUIRED>
-PARTITION BY <OPTIONAL>
+
+ORDER BY (REQUIRED)
+  
+PARTITION BY (OPTIONAL)
+  
+  
 <img width="675" alt="Screen Shot 2022-08-10 at 14 09 52" src="https://user-images.githubusercontent.com/99423162/183985737-c161c503-6820-402d-952a-489f844f69b4.png">
