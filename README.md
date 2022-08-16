@@ -39,3 +39,21 @@ B.
 
   Union is faster than (condition) and (condition)
 
+
+## 8/16/2022
+***SUM() AND COUNT() IN mySQL***
+
+source (https://stackoverflow.com/questions/39670039/mysql-what-is-the-difference-between-sum-and-count)
+
+SELECT SUM(USER_NAME =  'JoeBlow') 
+
+SELECT COUNT(USER_NAME =  'JoeBlow') 
+
+The first query returns the number of times the condition is true, because true is 1 and false is 0.
+
+The second query returns the complete record count because count() does not care about the content inside it, as long as the content is NOT NULL. Because count(1) and count(0) are still values and both get counted.
+
+To get the correct return value for the second query you would have to make the result of the condition be null (instead of 0) to not being counted.
+
+
+
