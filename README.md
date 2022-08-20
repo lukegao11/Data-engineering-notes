@@ -2,7 +2,7 @@
 a notebookish diary for a data engineer wannabe
 
 
-#SQL leetcode
+# SQL leetcode
 
 ## 8/6/2022
 
