@@ -56,8 +56,10 @@ The second query returns the complete record count because count() does not care
 To get the correct return value for the second query you would have to make the result of the condition be null (instead of 0) to not being counted.
 
 ## 9/2/2022
-***Pivot in sql***
+***Pivot in sql SERVER***
 source: https://www.c-sharpcorner.com/UploadFile/f0b2ed/pivot-and-unpovit-in-sql-server/
+
+pivot: from long to wide
 
 Syntax:
 
@@ -74,5 +76,22 @@ Syntax:
         IN ( [list of  pivoted columns])  
 
     ) AS <alias name  for  pivot table>  
+    (ORDER BY <column name>) (optional)
 
+Unpivot: from wide to long
 
+Syntax:
+
+    SELECT <non-pivoted column>,  
+           <list of unpivoted column>  
+    FROM  
+    (<pivoted table name>)  
+        AS <alias name>  
+    UNPIVOT  
+    (  
+    <column name>  
+    FOR  
+    [<column name that  become column headers>]  
+        IN ( [list of  pivoted columns])  
+
+    ) AS <alias name  for  pivot table>  
